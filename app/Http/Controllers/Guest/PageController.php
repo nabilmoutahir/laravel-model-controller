@@ -14,6 +14,9 @@ class PageController extends Controller
 {
     // Route home
     public function index(){
-        return view('home');
+
+        $movies = Movie::all();
+
+        return view('home', compact('movies'));
     }
 }

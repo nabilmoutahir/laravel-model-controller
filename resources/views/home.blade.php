@@ -7,6 +7,7 @@
 
   <div class="row">
 
+    {{-- for each to display db elements --}}
     @foreach ($movies as $movie)
     <div class="col-6">
 
@@ -23,7 +24,7 @@
 
     </div>
     @endforeach
-    
+
   </div>
 
 @endsection

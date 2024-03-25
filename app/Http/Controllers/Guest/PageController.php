@@ -15,6 +15,7 @@ class PageController extends Controller
     // Route home
     public function index(){
 
+        // Get movie elements
         $movies = Movie::all();
 
         return view('home', compact('movies'));
